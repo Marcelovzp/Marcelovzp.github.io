@@ -1,0 +1,201 @@
+body{
+    display: grid;
+    grid-template-rows: 1fr,1fr;
+    grid-template-columns: 1fr,1fr,1fr;
+    height: 100%; 
+}
+header{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    text-align: right;
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+}
+a{
+    color: white;
+    text-decoration: none;
+    font-weight: 900;
+}
+
+ul{
+    display: flex;
+    list-style: none;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    margin: 20px;
+    gap: 50px;
+    justify-self: right;
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    font-weight: 900;
+
+}
+.alinhar{
+    text-align: left;
+    padding-left: 25%;
+    font-size: 25px;
+}
+#imagem{
+    width: 250px;
+    height: 225px;
+    border-radius: 100%;
+}
+#perfil{
+    text-align: center;
+    color: #fff;
+    margin-top: 20vh;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    justify-self: center;
+}
+#descricao{
+    font-size: 18px;
+    text-align: center;
+    padding-left: 0;
+}
+#infocontato{
+    margin-top: 20vh;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #fff;
+}
+#habilidades{
+    justify-self: center;
+    margin-top: 20vh;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #fff;
+}
+#SobreMim{
+    text-align: center;
+    justify-self: center;
+    margin-top: 20vh;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: #fff;
+}
+
+.form{
+    width: 90%;
+}
+#ReceberNovidades{
+    margin-top: 20vh;
+    text-align: center;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    color: rgb(1, 21, 30);
+}
+#bt{
+    border: black solid 1px;
+    border-radius: 10px;
+    background: transparent;
+    color: rgb(1, 21, 30);
+    font-size: 20px;
+    padding: 10px;
+    width: 250px;
+    height: 50px;
+    margin-bottom: 20px;
+}
+
+#bt:hover{
+    background: rgb(1, 21, 30);
+    color: rgb(255, 255, 255);
+    transition: 1s;
+}
+.projetos{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    display: grid;
+    grid-template-rows: 1fr,1fr;
+    gap: 20px;
+}
+.interno{
+    background: #fff;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 20px;
+
+}
+#pj1{
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+#pj2{
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+
+
+.DivisaoInterna{
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows: 1fr,1fr;
+}
+.TituloProjeto{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 20px;
+    margin-top: 10%;
+    margin-left: 25%;
+}
+.DescricaoProjeto{
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    font-size: 20px;
+    margin-left: 25%;
+    margin-top: 20%;
+    width: 300px;
+}
+.ImagemProjeto{
+    grid-row-start: 1;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 300px;
+    height: 250px;
+    text-align: center;
+    padding: 35px;
+}
+
+.ImagemProjeto:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+.VerPagina{
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 50px;
+    justify-self: center;
+    background-color: rgb(1, 21, 30);
+    color: #fff;
+    font-size: 15px;
+    align-self: left;
+}
+.VerPagina:hover{
+    background: #fff;
+    color: black;
+}

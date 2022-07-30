@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="pt-br">
+        <title>Galeria de fotos</title>
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <body>
+        <header><h1 id="titulo">Galeria de fotos</h1></header>
+        <script>
+            var foto 
+            var fotoimg
+            var id
+            var local
+            var indice
+            var imagens = [];
+            window.onload = function(){
+                indice=0
+                cont = 1;
+                while (cont<=30)
+                {
+                    imagens[cont] = "IMAGENS/Carro" + cont + ".jpg"
+                    cont ++;
+                }    
+                
+            }
+            function zoom(){
+        
+                document.addEventListener("click",function(e)
+                {
+                    foto = document.querySelector('.foto');
+                    fotoimg = document.querySelector('#foto_img');
+                    id = e.target.id;
+                    local = "IMAGENS/" + id + ".jpg";
+                    indice = imagens.indexOf(local);
+                    if (indice == -1)
+                    {
+                        return 0;
+                    }
+                    fotoimg.setAttribute('src', local);
+                    foto.classList.toggle('fotozoom');
+
+                });
+            }
+        function fechar()
+        {
+            var foto = document.querySelector('.foto');
+            foto.classList.toggle('fotozoom');
+        }
+        
+        function proximo(){ 
+            caminho = fotoimg.getAttribute('src')
+            indice = imagens.indexOf(caminho);
+            indice++;
+            if(indice == 31){
+                indice = 1;
+            }
+            local = "IMAGENS/Carro" + indice + ".jpg";
+            fotoimg.setAttribute('src', local);
+        }
+        function anterior(){
+            caminho = fotoimg.getAttribute('src')
+            indice = imagens.indexOf(caminho);
+            indice--;
+            if(indice == 0){
+                indice = 30;
+            }
+            local = "IMAGENS/Carro" + indice + ".jpg";
+            fotoimg.setAttribute('src', local);
+        }
+            
+        </script>
+        
+        <div class="foto">
+            <div class="foto_content">
+                <div onclick="anterior()">
+                   <img id="anterior" src="Imagens/seta_esquerda.png" alt="seta para a esquerda">
+                </div>
+                <img src="IMAGENS/Carro1.jpg" id="foto_img">
+                <div onclick="fechar()">
+                    <img id="fechar" src="Imagens/fechar.png" alt="fechar">
+                </div>
+                <div onclick="proximo()">
+                <img id="proximo" src="Imagens/seta_direita.png" alt="seta para a direita">
+            </div>
+
+            </div>
+        </div>
+        <div id="container">
+            <div class="img" id="img2">
+                <img src="IMAGENS/Carro1.jpg" class="img" id="Carro1" onclick="zoom()">
+            </div>
+            <div class="img" id="img2">
+                <img src="IMAGENS/Carro2.jpg" class="img" id="Carro2" onclick="zoom()">
+            </div>
+            <div class="img" id="img3">
+                <img src="IMAGENS/Carro3.jpg" class="img" id="Carro3" onclick="zoom()">
+            </div>
+            <div class="img" id="img4">
+                <img src="IMAGENS/Carro4.jpg" class="img" id="Carro4" onclick="zoom()">
+            </div>
+            <div class="img" id="img5">
+                <img src="IMAGENS/Carro5.jpg" class="img" id="Carro5" onclick="zoom()">
+            </div>
+            <div class="img" id="img6">
+                <img src="IMAGENS/Carro6.jpg" class="img" id="Carro6" onclick="zoom()">
+            </div>
+            <div class="img" id="img7">
+                <img src="IMAGENS/Carro7.jpg" class="img" id="Carro7" onclick="zoom()">
+            </div>
+            <div class="img" id="img8">
+                <img src="IMAGENS/Carro8.jpg" class="img" id="Carro8" onclick="zoom()">
+            </div>
+            <div class="img" id="img9">
+                <img src="IMAGENS/Carro9.jpg" class="img" id="Carro9" onclick="zoom()">
+            </div>
+            <div class="img" id="img10">
+                <img src="IMAGENS/Carro10.jpg" class="img" id="Carro10" onclick="zoom()">
+            </div>
+            <div class="img" id="img11">
+                <img src="IMAGENS/Carro11.jpg" class="img" id="Carro11" onclick="zoom()">
+            </div>
+            <div class="img" id="img12">
+                <img src="IMAGENS/Carro12.jpg" class="img" id="Carro12" onclick="zoom()">
+            </div>
+            <div class="img" id="img13">
+                <img src="IMAGENS/Carro13.jpg" class="img" id="Carro13" onclick="zoom()">
+            </div>
+            <div class="img" id="img14">
+                <img src="IMAGENS/Carro14.jpg" class="img" id="Carro14" onclick="zoom()">
+            </div>
+            <div class="img" id="img15">
+                <img src="IMAGENS/Carro15.jpg" class="img" id="Carro15" onclick="zoom()">
+            </div>
+            <div class="img" id="img16">
+                <img src="IMAGENS/Carro16.jpg" class="img" id="Carro16" onclick="zoom()">
+            </div>
+            <div class="img" id="img17">
+                <img src="IMAGENS/Carro17.jpg" class="img" id="Carro17" onclick="zoom()">
+            </div>
+            <div class="img" id="img18">
+                <img src="IMAGENS/Carro18.jpg" class="img" id="Carro18" onclick="zoom()">
+            </div>
+            <div class="img" id="img19">
+                <img src="IMAGENS/Carro19.jpg" class="img" id="Carro19" onclick="zoom()">
+            </div>
+            <div class="img" id="img20">
+                <img src="IMAGENS/Carro20.jpg" class="img" id="Carro20" onclick="zoom()">
+            </div>
+            <div class="img" id="img21">
+                <img src="IMAGENS/Carro21.jpg" class="img" id="Carro21" onclick="zoom()">
+            </div>
+            <div class="img" id="img22">
+                <img src="IMAGENS/Carro22.jpg" class="img" id="Carro22" onclick="zoom()">
+            </div>
+            <div class="img" id="img23">
+                <img src="IMAGENS/Carro23.jpg" class="img" id="Carro23" onclick="zoom()">
+            </div>
+            <div class="img" id="img24">
+                <img src="IMAGENS/Carro24.jpg" class="img" id="Carro24" onclick="zoom()">
+            </div>
+            <div class="img" id="img25">
+                <img src="IMAGENS/Carro25.jpg" class="img" id="Carro25" onclick="zoom()">
+            </div>
+            <div class="img" id="img26">
+                <img src="IMAGENS/Carro26.jpg" class="img" id="Carro26" onclick="zoom()">
+            </div>
+            <div class="img" id="img27">
+                <img src="IMAGENS/Carro27.jpg" class="img" id="Carro27" onclick="zoom()">
+            </div>
+            <div class="img" id="img28">
+                <img src="IMAGENS/Carro28.jpg" class="img" id="Carro28" onclick="zoom()">
+            </div>
+            <div class="img" id="img29">
+                <img src="IMAGENS/Carro29.jpg" class="img" id="Carro29" onclick="zoom()">
+            </div>
+            <div class="img" id="img30">
+                <img src="IMAGENS/Carro30.jpg" class="img" id="Carro30" onclick="zoom()">
+            </div> 
+        </div>
+    </body>
+</html>

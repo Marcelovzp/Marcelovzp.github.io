@@ -1,0 +1,97 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    height: 5vh;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(46, 46, 46);
+    border-bottom: 1px white solid;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+body{
+    background-color: rgb(37, 37, 37);
+}
+
+#titulo{
+    color: whitesmoke;
+    margin: 0;
+    background: rgb(46, 46, 46);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+}
+
+#container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    height: 90vh;
+    background-color: rgb(37, 37, 37);
+    gap: 10px;
+    margin-top: 100px;
+}
+
+.img{
+    border: 3px white solid;
+    width: 240px;
+    height: 180px;
+    transition: 1s;
+    justify-self: center;
+}
+.img :hover{
+    transform: scale(1.2);
+}
+
+.foto{
+    top: 0;
+    width: 100vw;
+    position: absolute;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    visibility: hidden;
+    z-index: 1;
+    opacity: 0;
+    transition: visibility 0.8s linear, opacity 0.5s linear;
+}
+
+.fotozoom{
+    visibility: visible;
+    opacity: 1;
+}
+
+.foto_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+#foto_img{
+    width: 65vw;
+    transition: 2s;
+}
+
+#fechar{
+    fill: white;
+    position: absolute;
+    top: 20px;
+    width: 50px;
+}
+#proximo{
+    fill: white;
+    width: 100px;
+    height: 100px;
+}
+#anterior{
+    fill: white;
+    width: 100px;
+    height: 100px;
+}

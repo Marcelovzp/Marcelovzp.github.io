@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head lang="pt-br">
+        <meta charset="utf-8">
+        <title>Nova solicitação</title>
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <body>
+        <header>
+            <div id="menu">
+            <ul>
+                <li><a href="Nova_solicitacao.html">Nova solicitação</a></li>
+                <li><a href="Soli_em_andamento.html">Solicitações em andamento</a></li>
+                <li><a href="Historico.html">Histórico de solicitações</a></li>
+                <li><a href="Main.html">Home</a></li>
+            </ul>
+            </div>
+        </header>
+        <div class="container">
+        <form action="Main.html" method="get" class="box" style="width: 500px;">
+        <p class="centralizar">Informe os dados a seguir para realizar uma solicitação:</p>
+
+        <div class="curso" >
+            <label for="curso">Curso:</label>
+            <select name="curso" required>
+              <option  selected disabled value=""></option>
+              <option value="admn">Admnistração</option>
+              <option  value="ec">Engenharia Civil</option>
+              <option value="si">Sistemas de Informação</option>
+            </select>
+        </div>
+        <br>
+        <div class="curso">
+            <label for="senioridade" class="centralizar">Turma (período):</label>
+            <select name="senioridade" id="senioridade" required>
+              <option  selected disabled value=""></option>
+              <option value="admn">1°</option>
+              <option  value="ec">2°</option>
+              <option value="si">3°</option>
+              <option value="admn">4°</option>
+              <option  value="ec">5°</option>
+              <option value="si">6°</option>
+              <option value="admn">7°</option>
+              <option  value="ec">8°</option>
+              <option value="si">9°</option>
+              <option value="admn">10°</option>
+            </select>
+        </div>
+        <br>
+        <label class="centralizar">Disciplina da avaliação perdida:
+            <input type="text" name="nome" id="nome" required></label>
+            <br>
+            <p class="centralizar">Anexe o arquivo que justifique a ausência:
+            <input class="botao" type="file" value="Anexar arquivo"></p>
+        </div>
+        </form>
+    </body>
+</html>

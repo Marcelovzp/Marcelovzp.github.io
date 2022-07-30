@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<htm>
+    <head lang="pt-br">
+        <meta charset="utf-8">
+        <Title>Cadastro professores</Title>
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+    <body>
+        <div class="container">
+        <form action="EntrarProfessor.html" method="get" class="box">
+            
+            <p class="centralizar">Crie seu perfil de professor preenchendo todos os campos abaixo:</p>
+
+            <label class="centralizar">Nome completo
+                <input type="text" name="nome" id="nome" required></label>
+                <br>
+            <label class="centralizar">Telefone principal
+                <input type="text" name="nome" id="nome" required></label>
+                <br>
+            <label class="centralizar">Email institucional
+                <input type="text" name="nome" id="nome" required></label>
+                <br>
+                <label class="centralizar">Abreviação (sigla institucional)
+                    <input type="text" name="nome" id="nome" required></label>
+                    <br>
+                </label>
+                <div class="curso">
+                    <label for="curso">Curso lecionado:</label>
+                    <select name="curso" required>
+                      <option  selected disabled value=""></option>
+                      <option value="admn">Admnistração</option>
+                      <option  value="ec">Engenharia Civil</option>
+                      <option value="si">Sistemas de Informação</option>
+                    </select>
+                </div>
+                <br>
+            <label class="centralizar"> Crie sua senha
+            <input type = "password" name="senha" id="senha" required>
+            </label>
+            <br>
+            <label class="centralizar"> Confirmar senha
+                <input type = "password" name="senha" id="senha" required>
+                </label>
+            <br>
+            <input class="botao" type="submit" value="Cadastrar">
+                
+            
+        </div>
+        </form>
+    </body>
+</htm>

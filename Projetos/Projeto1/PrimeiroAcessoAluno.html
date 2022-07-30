@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Cadastro</title>
+        <link rel="stylesheet" href="CSS/Style.css">
+    </head>
+
+    <body>
+        <div class="container">
+        <form action="EntrarAluno.html" method="get" class="box">
+            
+            <p class="centralizar">Crie seu perfil de aluno preenchendo todos os campos abaixo:</p>
+
+            <label class="centralizar">Nome completo
+                <input type="text" name="nome" id="nome" required></label>
+                <br>
+
+                <div class="curso">
+                    <label for="curso">Selecione seu curso</label>
+                    <select name="curso" required>
+                      <option  selected disabled value=""></option>
+                      <option value="admn">Admnistração</option>
+                      <option  value="ec">Engenharia Civil</option>
+                      <option value="si">Sistemas de Informação</option>
+                    </select>
+                </div>
+                <br>
+            <label class="centralizar">Email institucional
+            <input type="email" name="email" id="email" required></label>
+            <br>
+
+            <label class="centralizar"> Crie sua senha
+            <input type = "password" name="senha" id="senha" required>
+            </label>
+            <br>
+            <label class="centralizar"> Confirmar senha
+                <input type = "password" name="senha" id="senha" required>
+                </label>
+
+            <br>
+            <input class="botao" type="submit" value="Cadastrar">
+                
+            
+        </div>
+        </form>
+    </body>
+</html>

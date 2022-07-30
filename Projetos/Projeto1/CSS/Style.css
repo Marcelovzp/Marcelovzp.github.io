@@ -1,0 +1,117 @@
+*{
+    padding: 0;
+    
+}
+
+body{
+    
+    background: linear-gradient(-45deg,rgba(101, 217, 123, 0.521),#18db3c);
+    background-attachment: fixed;
+    /*background-color: whitesmoke; /*#158229*/
+    
+}
+
+#menu{
+    z-index: 1;
+    background-color: #076218;
+    position: fixed;
+    left: 0;
+    top: 0;
+    font: normal 10pt inherit;
+    flex: 1;
+    text-align: right;
+    width: 100%;
+    height: 70px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    box-shadow: 2px 2px 2px rgb(166, 164, 164);
+}
+#menu ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+}
+
+#menu ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 17px;
+    display: grid;
+    grid-column-start: 3;
+    grid-column-end: 4;
+
+}
+
+#menu ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: white;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+#menu ul li:hover::after{
+    width: 100%;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    
+}
+.box{
+    box-shadow: #076218 5px 5px 5px;
+    /* border:#076218 solid 5px; */
+    display: grid;
+    justify-items: center;
+    width: 250px;
+    border-radius: 5px;
+    background-color: white;
+}
+
+.form{
+    width: 90%;
+}
+#email, #senha{
+    border-radius: 5px;
+    border-color: gray;
+}
+.botoes{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    
+}
+#bt1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+.botao{
+    border: gray solid 1px;
+    border-radius: 3px;
+    flex: 1;
+    padding: 2px;
+}
+.centralizar{
+    text-align: center;
+}
+.curso{
+    text-align: center;
+}
+.paragr-central{
+    color: #076218;
+    position:relative;
+
+}
+#p-centrais{
+    align-items: center;
+    font-size: 23px;
+}

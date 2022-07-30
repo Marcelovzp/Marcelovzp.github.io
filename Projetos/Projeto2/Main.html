@@ -19,7 +19,7 @@
                 cont = 1;
                 while (cont<=30)
                 {
-                    imagens[cont] = "IMAGENS/Carro" + cont + ".jpg"
+                    imagens[cont] = "https://marcelovzp.github.io/Projetos/Projeto2/Imagens/Carro" + cont + ".jpg"
                     cont ++;
                 }    
                 
@@ -31,7 +31,7 @@
                     foto = document.querySelector('.foto');
                     fotoimg = document.querySelector('#foto_img');
                     id = e.target.id;
-                    local = "https://marcelovzp.github.io/Projetos/Projeto2/Main.html" + "IMAGENS/" + id + ".jpg";
+                    local = "https://marcelovzp.github.io/Projetos/Projeto2/Imagens/Carro" + id + ".jpg";
                     indice = imagens.indexOf(local);
                     if (indice == -1)
                     {
@@ -55,7 +55,7 @@
             if(indice == 31){
                 indice = 1;
             }
-            local = "IMAGENS/Carro" + indice + ".jpg";
+            local = "https://marcelovzp.github.io/Projetos/Projeto2/Imagens/Carro" + indice + ".jpg";
             fotoimg.setAttribute('src', local);
         }
         function anterior(){
@@ -65,7 +65,7 @@
             if(indice == 0){
                 indice = 30;
             }
-            local = "https://marcelovzp.github.io/Projetos/Projeto2/Main.html" + "IMAGENS/Carro" + indice + ".jpg";
+            local = "https://marcelovzp.github.io/Projetos/Projeto2/Imagens/Carro" + indice + ".jpg";
             
             fotoimg.setAttribute('src', local);
         }

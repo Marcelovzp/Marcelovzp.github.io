@@ -31,7 +31,7 @@
                     foto = document.querySelector('.foto');
                     fotoimg = document.querySelector('#foto_img');
                     id = e.target.id;
-                    local = "IMAGENS/" + id + ".jpg";
+                    local = "https://marcelovzp.github.io/Projetos/Projeto2/Main.html" + "IMAGENS/" + id + ".jpg";
                     indice = imagens.indexOf(local);
                     if (indice == -1)
                     {
@@ -65,7 +65,8 @@
             if(indice == 0){
                 indice = 30;
             }
-            local = "IMAGENS/Carro" + indice + ".jpg";
+            local = "https://marcelovzp.github.io/Projetos/Projeto2/Main.html" + "IMAGENS/Carro" + indice + ".jpg";
+            
             fotoimg.setAttribute('src', local);
         }
             
